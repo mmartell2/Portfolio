@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Matthew Martell | Web Developer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--HOME SECTION-->
+        <div class="home">
+            <div id="canvas" class="canvas">
+                <canvas class="connecting-dots"></canvas>
+            </div>
+            <div class="landing">
+                <div class="line-1"> Hello, I'm <span>Matthew</span>.</div>
+                <div class="line-2">I'm a Full Stack Web Developer.</div>
+                <a href="#about-break">
+                    <button class="btn">About Me</button>
+                </a>
+            </div> 
+        </div>
+        <!--NAVIGATION-->
+        <div id="nav-bar" class="nav-bar">
+            <ul class="nav-list">
+                <li><a class="nav-home" href="#canvas">Home</a></li>
+                <li><a class="nav-about" href="#about-break">About</a></li>
+                <li><a class="nav-projects" href="#projects-break">Projects</a></li>
+                <li><a class="nav-contact" href="#contact-break">Contact</a></li>
+            </ul>
+        </div>
+        <!--ABOUT SECTION-->
+        <br id="about-break">
+        <div class="about">
+            <div class="header-container">
+                <h1 class="section-header">About</h1>
+                <div class="header-background"></div>
+            </div>
+            
+            <div class="about-content">
+            
+                <div class="about-text">
+                    <img src="img/user.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio reiciendis atque assumenda autem dolores magni esse, voluptatibus quia nisi soluta. Dignissimos laudantium velit praesentium hic quos minus iusto nihil, sapiente, temporibus qui illo, perspiciatis dicta pariatur tempore blanditiis iste</p>
+                </div>
+                <div class="skills">
+                    <h2 class="section-header">My Skills</h2>
+                    <div class="skill-imgs">
+                        <div class="skill-div">
+                            <img src="img/html.png" alt="">
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill-div">
+                            <img src="img/social.png" alt="">
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill-div">
+                            <img src="img/js.png" alt="">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-div">
+                            <img src="img/sql-server.png" alt="">
+                            <p>SQL</p>
+                        </div>
+                        <div class="skill-div">
+                            <img src="img/PLSQL.png" alt="">
+                            <p>PL/SQL</p>
+                        </div>
+                        <div class="skill-div">
+                            <img src="img/database.png" alt="">
+                            <p>DB Design</p>
+                        </div>
+                        <div class="skill-div">
+                            <img src="img/web.png" alt="">
+                            <p>PHP</p>
+                        </div>
+                        <div class="skill-div">
+                            <img src="img/java.png" alt="">
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-div">
+                            <img src="img/react.png" alt="">
+                            <p>React</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Projects Section-->
+        <br id="projects-break">
+        <div class="projects-section">
+            <div class="header-container">
+                <h1 class="section-header">Projects</h1>
+                <div class="header-background"></div>
+            </div>
+            <div class="project-card">
+                <a class="loruki" href="#"><img src="img/Loruki.png" alt=""></a>
+                <div class="project-text">
+                    <h1>Loruki.</h1>
+                    <h1>Web Application Deployment App</h1>
+                    <p>Full Stack application built with HTML, CSS, and JS</p>
+                    <a class="proj-btn" href="#">Live App</a>
+                    <a class="proj-btn" href="#">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+        <!--Contact Section-->
+        <br id="contact-break">
+        <div class="contact-section">
+            <div class="header-container">
+                <h1 class="section-header">Contact</h1>
+                <div class="header-background"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-p">Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+                <form class="contact-form" action="">
+                    <input type="text" placeholder="Name">
+                    
+                    <input type="text" placeholder="Email">
+                    
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                    
+                    <div class="submit-btn">
+                        <input type="submit">
+                    </div> 
+                </form>
+                <footer>
+                    <a class="up-arrow" href="#canvas"><img src="img/up-arrow.png" alt=""></a>
+                    <div class="contact-imgs">
+                        <a class="c-img" href=""><img src="img/github.png" alt=""></a>
+                        <a class="c-img" href=""><img src="img/email.png" alt=""></a>
+                    </div>
+                    <p>Matthew Martell &copy; 2024</p>
+                </footer>
+            </div>
+        </div>
+        <script src="javaScript/canvas.js"></script>
+        <script src="javaScript/index.js"></script>
+    </body>
+</html>
