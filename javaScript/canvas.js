@@ -116,24 +116,31 @@ function Circle(x, y, dx, dy, radius) {
         this.draw();
     }
 }
+
+let numOfBalls = 0
+
+screen.width < 668 ?
+    numOfBalls = 100 :
+    numOfBalls = 1000
+
 //circle array to store cicles created by the for loop
 var circleArray = [];
-    //for loop to create the circles
-    for(i = 0; i <1000; i++){
-        var radius = 2;
-        var x = Math.random() * (innerWidth - radius * 2) + radius;
-        var y = Math.random() * (innerHeight - radius * 2) + radius;
-        var dx = (Math.random() - .5);
-        var dy = (Math.random() - .5);
-        
-        circleArray.push(new Circle(x, y, dx, dy, radius));
-    }
+//for loop to create the circles
+for(i = 0; i < numOfBalls; i++){
+    var radius = 2;
+    var x = Math.random() * (innerWidth - radius * 2) + radius;
+    var y = Math.random() * (innerHeight - radius * 2) + radius;
+    var dx = (Math.random() - .5);
+    var dy = (Math.random() - .5);
+    
+    circleArray.push(new Circle(x, y, dx, dy, radius));
+}
 
 var circle = new Circle(Math.random() * window.innerWidth, Math.random() * window.innerHeight, 2, 2, 30);
 //animate function that clears the screen of previous circles making it look like the circles are moving
 function animate() {
     requestAnimationFrame(animate);
-    context.clearRect(0, 0, innerWidth, innerHeight);
+    context.clearRect(0, 0, screen.width, screen.height);
 
     for(i = 0; i < circleArray.length; i++){
         circleArray[i].update();
@@ -159,3 +166,16 @@ function animate() {
  }
 
 animate();
+//functions for screen reszing
+function resizeCanvas() {
+    canvas.width = canvas.clientWidth
+    canvas.height = canvas.clientHeight
+    draw()
+}
+
+function draw() {
+    context.clearRect(0, 0, canvas.width, canvas.height)
+}
+
+window.addEventListener('resize', resizeCanvas)
+resizeCanvas()
