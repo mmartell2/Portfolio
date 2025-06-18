@@ -310,6 +310,9 @@ html {
     background-image: linear-gradient(50deg, var(--primary-color), var(--secondary-color));
     border: 1px solid var(--text-color);
     min-width: 250px;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    transition: .5s;
 }
 
 .project-card-2 a img {
@@ -320,9 +323,15 @@ html {
 
 .project-card a img {
     background-image: linear-gradient(50deg, var(--secondary-color), var(--primary-color));
-    padding-top: 2.5rem;
+    
     padding-right: 2.5rem;
-    padding-bottom: 2.5rem;
+    
+    
+}
+
+.project-card a img:hover,
+.project-card-2 a img:hover {
+    scale: 95%;
 }
 
 .project-text-2 {
